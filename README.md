@@ -1,7 +1,5 @@
-deep-learning-udacity
-==============================
-
-Udacity Deep Learning Code and Notes
+deep-learning
+=============
 
 Project Organization
 ------------

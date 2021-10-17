@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# deep-learning-udacity documentation build configuration file, created by
+# deep-learning documentation build configuration file, created by
 # sphinx-quickstart.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -41,7 +41,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'deep-learning-udacity'
+project = u'deep-learning'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -184,8 +184,8 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
     ('index',
-     'deep-learning-udacity.tex',
-     u'deep-learning-udacity Documentation',
+     'deep-learning.tex',
+     u'deep-learning Documentation',
      u"Lourens Walters", 'manual'),
 ]
 
@@ -215,7 +215,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'deep-learning-udacity', u'deep-learning-udacity Documentation',
+    ('index', 'deep-learning', u'deep-learning Documentation',
      [u"Lourens Walters"], 1)
 ]
 
@@ -229,8 +229,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'deep-learning-udacity', u'deep-learning-udacity Documentation',
-     u"Lourens Walters", 'deep-learning-udacity',
+    ('index', 'deep-learning', u'deep-learning Documentation',
+     u"Lourens Walters", 'deep-learning',
      'Udacity Deep Learning Code and Notes', 'Miscellaneous'),
 ]
 
