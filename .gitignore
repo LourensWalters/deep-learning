@@ -59,6 +59,7 @@ target/
 
 # DotEnv configuration
 .env
+venv
 
 # Database
 *.db
@@ -79,6 +80,16 @@ target/
 # exclude data from source control by default
 data/
 notebooks/convolutional-neural-networks/cifar-cnn/data
+notebooks/dcgan-svhn/data
+notebooks/dcgan-svhn/train_samples.pkl
+notebooks/gan-mnist/train_samples.pkl
+notebooks/landmark_project/ignore.pt
+notebooks/landmark_project/model_scratch.pt
+notebooks/landmark_project/model_transfer.pt
+notebooks/landmark_project/landmark_images
+notebooks/project-face-generation/train_samples.pkl
+notebooks/project-tv-script-generation/preprocess.p
+notebooks/project-tv-script-generation/trained_rnn.pt
 
 # Mac OS-specific storage files
 .DS_Store
