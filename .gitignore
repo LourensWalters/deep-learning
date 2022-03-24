@@ -80,9 +80,11 @@ venv
 # exclude data from source control by default
 data/
 notebooks/convolutional-neural-networks/cifar-cnn/data
+notebooks/convolutional-neural-networks/conv-visualization/data
 notebooks/dcgan-svhn/data
 notebooks/dcgan-svhn/train_samples.pkl
 notebooks/gan-mnist/train_samples.pkl
+notebooks/gan-mnist/data
 notebooks/landmark_project/ignore.pt
 notebooks/landmark_project/model_scratch.pt
 notebooks/landmark_project/model_transfer.pt
@@ -90,6 +92,11 @@ notebooks/landmark_project/landmark_images
 notebooks/project-face-generation/train_samples.pkl
 notebooks/project-tv-script-generation/preprocess.p
 notebooks/project-tv-script-generation/trained_rnn.pt
+notebooks/recurrent-neural-networks/char-rnn/
+cache/sentiment_analysis/bow_features.pkl
+notebooks/Project_Plagiarism_Detection/data.zip
+cache/sentiment_analysis/preprocessed_data.pkl
+notebooks/recurrent-neural-networks/char-rnn/rnn_20_epoch.net
 
 # Mac OS-specific storage files
 .DS_Store
