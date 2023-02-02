@@ -116,8 +116,16 @@ if __name__ == '__main__':
     
     ## TODO: Add args for the three model parameters: input_features, hidden_dim, output_dim
     # Model Parameters
-    
-    
+    parser.add_argument('--input_features', type=int, default=2,
+                        help='input_features (default: 2)')
+    parser.add_argument('--hidden_dim', type=int, default=20,
+                        help='hidden_dim (default: 20)')
+    parser.add_argument('--output_dim', type=int, default=1,
+                        help='output_dim (default: 1)')
+    parser.add_argument('--lr', type=float, default=1e-3,
+                        help='learning rate (default: 1e-3)')
+
+
     # args holds all passed-in arguments
     args = parser.parse_args()
 
@@ -135,11 +143,11 @@ if __name__ == '__main__':
     ## TODO:  Build the model by passing in the input params
     # To get params from the parser, call args.argument_name, ex. args.epochs or ards.hidden_dim
     # Don't forget to move your model .to(device) to move to GPU , if appropriate
-    model = None
+    model = BinaryClassifier(args.input_features, args.hidden_dim, args.output_dim).to(device)
 
     ## TODO: Define an optimizer and loss function for training
-    optimizer = None
-    criterion = None
+    optimizer = optim.Adam(model.parameters(), lr=args.lr)
+    criterion = torch.nn.BCELoss()
 
     # Trains the model (given line of code, which calls the above training function)
     train(model, train_loader, args.epochs, criterion, optimizer, device)
@@ -150,8 +158,9 @@ if __name__ == '__main__':
     with open(model_info_path, 'wb') as f:
         model_info = {
             'input_features': args.input_features,
-            'hidden_dim': <add_arg>,
-            'output_dim': <add_arg>,
+            'hidden_dim': args.hidden_dim,
+            'output_dim': args.output_dim,
+            'lr': args.lr,
         }
         torch.save(model_info, f)
         
